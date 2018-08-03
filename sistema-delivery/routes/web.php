@@ -10,7 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Rotas do Globais
+Route::get('/', 'SistemaController@index');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Rotas para o Restaurante
+Route::get('/restaurante/cadastro','RestauranteController@cadastro');
+Route::get('/restaurante/login','RestauranteController@login');
